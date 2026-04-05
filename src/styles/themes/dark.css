@@ -1,0 +1,32 @@
+/*
+  Dark theme — overrides semantic color tokens only.
+  Activate by adding data-theme="dark" to the <html> element.
+*/
+[data-theme="dark"] {
+  /* Brand */
+  --accent-color: var(--purple-500);
+
+  --color-primary: var(--accent-color);
+  --color-primary-hover: var(--purple-700);
+  --color-primary-light: var(--purple-900);
+
+  /* Text */
+  --color-text: var(--gray-200);
+  --color-text-muted: var(--gray-400);
+  --color-text-heading: var(--white);
+  --color-text-on-primary: var(--white);
+
+  /* Surfaces */
+  --color-bg: var(--gray-900);
+  --color-surface: var(--gray-800);
+
+  /* Borders */
+  --color-border: var(--gray-700);
+  --color-border-focus: var(--purple-500);
+
+  /* Status */
+  --color-error: var(--red-400);
+  --color-error-bg: var(--red-900);
+  --color-success: var(--green-400);
+  --color-success-bg: var(--green-900);
+}

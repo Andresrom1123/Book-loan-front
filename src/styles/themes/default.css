@@ -1,0 +1,33 @@
+/*
+  Semantic tokens — light theme.
+  Maps palette to meaning (what the color does, not what color it is).
+  Components should only use these variables, never palette.css directly.
+*/
+:root {
+  /* Brand */
+  --accent-color: var(--purple-600);
+
+  --color-primary: var(--accent-color);
+  --color-primary-hover: var(--purple-800);
+  --color-primary-light: var(--purple-200);
+
+  /* Text */
+  --color-text: var(--gray-900);
+  --color-text-muted: var(--gray-600);
+  --color-text-heading: var(--black);
+  --color-text-on-primary: var(--white);
+
+  /* Surfaces */
+  --color-bg: var(--gray-100);
+  --color-surface: var(--white);
+
+  /* Borders */
+  --color-border: var(--gray-300);
+  --color-border-focus: var(--purple-600);
+
+  /* Status */
+  --color-error: var(--red-600);
+  --color-error-bg: var(--red-100);
+  --color-success: var(--green-600);
+  --color-success-bg: var(--green-100);
+}

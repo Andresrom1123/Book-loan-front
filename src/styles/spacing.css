@@ -1,0 +1,51 @@
+:root {
+  /* ── Unidad base ── */
+  --space-unit: 0.5rem;
+
+  /* ── Padding shortcuts ── */
+  --pad-1: var(--space-unit);
+  --pad-2: calc(2 * var(--space-unit));
+  --pad-3: calc(3 * var(--space-unit));
+
+  /* ── Escala de espaciado ── */
+  --space-0-25: calc(var(--space-unit) / 4);
+  --space-0-5: calc(var(--space-unit) / 2);
+  --space-1: var(--space-unit);
+  --space-2: calc(2 * var(--space-unit));
+  --space-3: calc(3 * var(--space-unit));
+  --space-4: calc(4 * var(--space-unit));
+  --space-5: calc(5 * var(--space-unit));
+  --space-6: calc(6 * var(--space-unit));
+  --space-7: calc(7 * var(--space-unit));
+  --space-8: calc(8 * var(--space-unit));
+
+  /* ── Tipografía ── */
+  --font-size-xs: calc(1.75 * var(--space-unit));   /* 0.875rem */
+  --font-size-sm: calc(2 * var(--space-unit));       /* 1rem     */
+  --font-size-md: calc(2.4 * var(--space-unit));     /* 1.2rem   */
+  --font-size-lg: calc(3 * var(--space-unit));       /* 1.5rem   */
+  --font-size-xl: calc(4 * var(--space-unit));       /* 2rem     */
+
+  --font-weight-normal: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+
+  /* ── Bordes ── */
+  --radius-sm: var(--space-1-5, calc(1.5 * var(--space-unit)));  /* ~6px  */
+  --radius-md: calc(2.5 * var(--space-unit));                     /* ~10px */
+  --radius-full: 9999px;
+
+  --border-width: 1px;
+
+  /* ── Elevación ── */
+  --shadow-card: 0 var(--space-1) calc(5 * var(--space-unit)) rgba(0, 0, 0, 0.08);
+
+  /* ── Movimiento ── */
+  --transition-fast: 0.2s;
+
+  /* ── Opacidad ── */
+  --opacity-disabled: 0.6;
+}
