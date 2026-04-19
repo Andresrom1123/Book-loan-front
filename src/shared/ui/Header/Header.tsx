@@ -11,7 +11,7 @@ export function Header({ dark, onToggle }: HeaderProps) {
     <header className={styles.header}>
       <span className={styles.logo}>BookLoan</span>
 
-      <Button variant="outline" onClick={onToggle}>
+      <Button variant="outline" size="sm" onClick={onToggle}>
         {dark ? 'Light' : 'Dark'}
       </Button>
     </header>

@@ -1,15 +1,20 @@
 import { type ButtonHTMLAttributes } from 'react';
+
 import styles from './Button.module.css';
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   loading?: boolean;
   variant?: 'primary' | 'outline';
+  size?: 'sm' | 'md' | 'lg';
 }
 
-export function Button({ loading, variant = 'primary', children, disabled, ...props }: ButtonProps) {
+export function Button({ loading, variant = 'primary', size = 'md', children, disabled, ...props }: ButtonProps) {
+  const sizeClass = styles[size];
+  const variantClass = variant === 'outline' ? styles.outline : styles.primary;
+
   return (
     <button
-      className={variant === 'outline' ? styles.outline : styles.primary}
+      className={`${variantClass} ${sizeClass}`}
       disabled={disabled || loading}
       {...props}
     >
