@@ -1,0 +1,33 @@
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: var(--space-8);
+  background: var(--black);
+  color: var(--white);
+}
+
+.title {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  font-family: 'Caveat', cursive;
+  line-height: var(--line-height-tight);
+  margin: 0 0 var(--space-3);
+}
+
+.text {
+  margin: 0;
+  font-size: var(--font-size-xs);
+  color: var(--gray-400);
+  line-height: var(--line-height-normal);
+}
+
+.decor {
+  display: block;
+  margin: 0 auto;
+}
+
+.foot {
+  font-size: var(--font-size-xs);
+  color: var(--gray-600);
+}

@@ -11,6 +11,7 @@
 
 body {
   margin: 0;
+  font-family: 'Space Mono', monospace;
   font-size: var(--font-size-sm);
   line-height: var(--line-height-normal);
   color: var(--color-text);

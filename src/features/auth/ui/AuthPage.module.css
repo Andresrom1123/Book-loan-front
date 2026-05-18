@@ -1,0 +1,10 @@
+.page {
+  display: flex;
+  flex: 1;
+}
+
+.splitCard {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  flex: 1;
+}
