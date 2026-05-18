@@ -1,6 +1,8 @@
 import { useState } from 'react';
 
-import { Button } from '../../../shared/ui/Button/Button';
+import { AuthSwitchLink } from '../../../../shared/ui/AuthSwitchLink/AuthSwitchLink';
+import { Button } from '../../../../shared/ui/Button/Button';
+import { Input } from '../../../../shared/ui/Input/Input';
 
 import styles from './LoginForm.module.css';
 
@@ -19,18 +21,16 @@ export function LoginForm() {
 
   return (
     <form className={styles.form} onSubmit={handleSubmit}>
-      <h2 className={styles.title}>Login</h2>
+      <h2 className={styles.title}>Iniciar Sesión</h2>
 
-      <input
-        className={styles.input}
+      <Input
         type="email"
         value={email}
         placeholder="Email"
         onChange={(e) => setEmail(e.target.value)}
       />
 
-      <input
-        className={styles.input}
+      <Input
         type="password"
         value={password}
         placeholder="Password"
@@ -40,8 +40,10 @@ export function LoginForm() {
       {error && <p className={styles.error}>{error}</p>}
 
       <Button type="submit" loading={loading}>
-        Login
+        Iniciar Sesión
       </Button>
+
+      <AuthSwitchLink text="¿No tienes cuenta?" linkLabel="Crear una" to="/register" />
     </form>
   );
 }

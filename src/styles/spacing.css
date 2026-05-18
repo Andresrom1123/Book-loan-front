@@ -25,6 +25,7 @@
   --font-size-md: calc(2.4 * var(--space-unit));     /* 1.2rem   */
   --font-size-lg: calc(3 * var(--space-unit));       /* 1.5rem   */
   --font-size-xl: calc(4 * var(--space-unit));       /* 2rem     */
+  --font-size-2xl: calc(6 * var(--space-unit));      /* 3rem     */
 
   --font-weight-normal: 400;
   --font-weight-semibold: 600;

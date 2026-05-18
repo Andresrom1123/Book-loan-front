@@ -1,9 +1,9 @@
 import { useState } from 'react';
 
-import { createAuthService } from '../../api/authService';
-import { loginUser } from '../../model/loginUser';
+import { createAuthService } from '../../../api/authService';
+import { loginUser } from '../../../model/loginUser';
 
-import type { LoginRequest } from '../../model/auth.types';
+import type { LoginRequest } from '../../../model/auth.types';
 
 const authService = createAuthService(import.meta.env.VITE_API_URL ?? '');
 

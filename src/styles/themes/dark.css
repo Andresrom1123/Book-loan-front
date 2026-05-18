@@ -24,6 +24,12 @@
   --color-border: var(--gray-700);
   --color-border-focus: var(--purple-500);
 
+  /* Selected state */
+  --color-selected-bg:      var(--white);
+  --color-selected-text:    var(--black);
+  --color-selected-icon-bg: rgb(0 0 0 / 0.1);
+  --color-selected-desc:    rgb(0 0 0 / 0.6);
+
   /* Status */
   --color-error: var(--red-400);
   --color-error-bg: var(--red-900);
